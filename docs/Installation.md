@@ -9,6 +9,8 @@
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
     - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
+      - [Configure PROFINET IO with Binary structure](#configure-profinet-io-with-binary-structure)
+      - [Configure PROFINET IO with JSON structure](#configure-profinet-io-with-json-structure)
 
 ## Configure Device Layer 2 access
 
@@ -150,3 +152,7 @@ The PROFINET IO Connector application requires three configuration files:
 Hint: When you change any config file, you have to restart the app (e.g. via the Web UI of the IEM) to activate the changed configuration!
 
 ![PROFINET_IO_Configurations_Files](graphics/PROFINET_IO_Configurations_Files.PNG)
+
+#### Configure PROFINET IO with Binary structure
+
+#### Configure PROFINET IO with JSON structure
