@@ -9,8 +9,8 @@
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
     - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
-      - [Configure PROFINET IO with Binary structure](#configure-profinet-io-with-binary-structure)
-      - [Configure PROFINET IO with JSON structure](#configure-profinet-io-with-json-structure)
+      - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
+      - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
 
 ## Configure Device Layer 2 access
 
@@ -142,6 +142,8 @@ This file you have to provide to the PROFINET IO Connector application.
 
 ### Configure PROFINET IO Configuration Files
 
+The required PROFINET IO Connector files can be downloaded as a ZIP file under the following link [↗ ID 109793251](https://support.industry.siemens.com/cs/document/109793251/profinet-io-connector?dti=0&lc=de-WW)
+
 The PROFINET IO Connector application requires three configuration files:
 
 - User credentials for IE Databus (pn_hs_adpt_credentials.xml)
@@ -153,6 +155,19 @@ Hint: When you change any config file, you have to restart the app (e.g. via the
 
 ![PROFINET_IO_Configurations_Files](graphics/PROFINET_IO_Configurations_Files.PNG)
 
-#### Configure PROFINET IO with Binary structure
+#### Configure PROFINET IO with Binary format
 
-#### Configure PROFINET IO with JSON structure
+The binary format is designed for higher performance and is required for the data service.
+Note: The Data Service only supports the binary structure and not the JSON structure.
+
+For the binary format, the respective binary files must be uploaded in the Profinet IO Connector.
+
+![PROFINET_IO_Configurations_Binary_File](graphics/PROFINET_IO_Configurations_Binary_File.PNG)
+
+#### Configure PROFINET IO with JSON format
+
+The JSON format is for easier handling on the client side.
+
+For the JSON format, the respective JSON files must be uploaded in the Profinet IO Connector.
+
+![PROFINET_IO_Configurations_JSON_File](graphics/PROFINET_IO_Configurations_JSON_File.PNG)
