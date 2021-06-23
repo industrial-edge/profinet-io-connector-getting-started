@@ -67,8 +67,10 @@ The used TIA Portal project can be found in the [miscellenous repository](https:
 ## Configuration steps
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
-- Configure PLC Connection (Databus, S7 Connector)
+- Configure Device Layer 2
+- Configure PLC Connection
 - Configure PROFINET IO Connector
+- Configure Databus and Data Service
 
 ## Usage
 

@@ -4,17 +4,18 @@
   - [Configure Device Layer 2 access](#configure-device-layer-2-access)
   - [Configure PLC Connection](#configure-plc-connection)
     - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
-    - [Configure Databus](#configure-databus)
-    - [Configure Data Service](#configure-data-service)
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
     - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
       - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
       - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
+  - [Configure Databus and Data Service](#configure-databus-and-data-service)
+    - [Configure Databus](#configure-databus)
+    - [Configure Data Service](#configure-data-service)
 
 ## Configure Device Layer 2 access
 
-The device scanner requires a layer 2 access to enable the scanner of the devices in the Machine Insight.
+The PROFINET IO Connector requires Layer 2 access to have communication with the PLC.
 
 Hint: Layer 2 access can only be configured for a new device, not later.
 
@@ -34,6 +35,10 @@ Configure the network interface and the layer 2 access and click on "add".
 
 Confirm the device configuration with "Next" and with "Create".
 
+Layer 2 configuration example:
+
+![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
+
 ## Configure PLC Connection
 
 To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection with the PLC via PROFINET.
@@ -45,6 +50,9 @@ In order to build this infrastructure, these apps must be configured properly:
 - TIA Portal HSP for PN Driver
 - Databus
 - Data Service
+- PROFINET IO Connector
+
+Note: During the first installation, the PROFINET IO connector is installed without files. The configuration files are configured later and uploaded to the app.
 
 ### TIA Portal HSP for PN Driver
 
@@ -53,52 +61,20 @@ You can download the needed HSP 0307 from the Siemens support pages [↗ ID 7234
 
 ![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
 
-### Configure Databus
-
-In your IEM open the Databus and launch the configurator.
-
-Add a user with this topic:
-`"ie/d/b/simatic/v1/pnhs1/dp/r"`
-`"ie/m/j/simatic/v1/pnhs1/dp/r"`
-
-![ie_databus_user](graphics/IE_Databus_User.PNG)
-
-![ie_databus](graphics/IE_Databus.PNG)
-
-Deploy the configuration.
-
-### Configure Data Service
-
-In your IED open the Data Service 
-
-Add a PROFINET IO Connector:
-
-![Data_Service_Adapter](graphics/Data_Service_Adapters.PNG)
-
-Take the settings what you have used in the Databus:
-
-![Data_Service_PROFINET_IO_Connector](graphics/Data_Service_PROFINET_IO_Connector.PNG)
-
-click on "Assets & Connectivity" at the top of the left-hand page and create your first variables.
-
-Select the PROFINET IO Connector in "Choose an Adapter" and all "profinetxadriver" in "choose a tag":
-
-![Data_Service_Variables](graphics/Data_Service_Data_Service_Variable.PNG)
-
-click on "Aspects" and select all variables.
-
-![Data_Service_Aspects](graphics/Data_Service_Data_Service_Aspects.PNG)
-
 ## Configure PROFINET IO Connector 
 
 The PROFINET IO Connector app can be adjusted according the project's needs. 
 Configurarion files enable to configure the behavior of the app.
 
-Download the configuration files "Appendix" below:
+An example of the required PROFINET IO Connector files can be downloaded here under "Appendix":
 
 https://support.industry.siemens.com/cs/us/en/view/109793251
 
-The IE Databus needs some configuration for the PROFINET IO Connector (topics, user). These settings must fit to the PROFINET IO Connector configuration.
+- User credentials for IE Databus (pn_hs_adpt_credentials.xml)
+- Application settings (pn_hs_adpt_appconfig.xml)
+- Profinet configuration (e.g. gerated from TIA Portal)
+- optional Tag Definition file (pn_hs_adpt_tagdefs.json)
+
 The Profinet configuration is configured with the SIMATIC TIA Portal.
 
 ### Configure PROFINET IO Connector in TIA Portal
@@ -109,7 +85,7 @@ Select the PROFINET Driver from the catalog.
 
 ![TIA_PROFINET_Driver](graphics/TIA_PROFINET_Driver.PNG)
 
-The project contains now a PC station with prepared PROFINET Driver. Switch to the Device View.
+The project contains now a PC station with prepared PROFINET Driver. Switch to the Device View and connect the PLC with the PROFINET Driver.
 
 Next you have to add to the PROFINET Driver the Linux native communication interface.
 
@@ -135,16 +111,14 @@ Corresponding Tag Definition File.
 
 ![Tag_Definition_file](graphics/Tag_Definition_file.PNG)
 
-When you create a TIA Portal project with the PROFINET Driver as controller, finally a XML configuration file is generated during the compile of the project. 
+Compile the PROFINET Driver to create the XML configuration file.
 This file you have to provide to the PROFINET IO Connector application.
 
 ![TIA_PROFINET_Driver_XML](graphics/TIA_PROFINET_Driver_XML.PNG)
 
 ### Configure PROFINET IO Configuration Files
 
-The required PROFINET IO Connector files can be downloaded as a ZIP file under the following link [↗ ID 109793251](https://support.industry.siemens.com/cs/document/109793251/profinet-io-connector?dti=0&lc=de-WW)
-
-The PROFINET IO Connector application requires three configuration files:
+The PROFINET IO Connector application requires four configuration files:
 
 - User credentials for IE Databus (pn_hs_adpt_credentials.xml)
 - Application settings (pn_hs_adpt_appconfig.xml)
@@ -171,3 +145,45 @@ The JSON format is for easier handling on the client side.
 For the JSON format, the respective JSON files must be uploaded in the Profinet IO Connector.
 
 ![PROFINET_IO_Configurations_JSON_File](graphics/PROFINET_IO_Configurations_JSON_File.PNG)
+
+## Configure Databus and Data Service 
+
+### Configure Databus
+
+In your IEM open the Databus and launch the configurator.
+
+Add a user with this topic:
+`"ie/d/b/simatic/v1/pnhs1/dp/r"`
+`"ie/m/j/simatic/v1/pnhs1/dp/r"`
+
+![ie_databus_user](graphics/IE_Databus_User.PNG)
+
+![ie_databus](graphics/IE_Databus.PNG)
+
+Deploy the configuration.
+
+### Configure Data Service
+
+Open the Data Service in the IED.
+
+click on adapters and chosse the PROFINET IO Connector:
+
+![Data_Service_Adapter](graphics/Data_Service_Adapters_Profinet_IO_Connctor.PNG)
+
+Take the settings what you have used in the Data Service:
+
+![Data_Service_PROFINET_IO_Connector](graphics/Data_Service_PROFINET_IO_Connector.PNG)
+
+Activate the adapter for PROFINET IO Connector:
+
+![Data_Service_Adapter](graphics/Data_Service_Adapters.PNG)
+
+click on "Assets & Connectivity" at the top of the left-hand page and create your first variables.
+
+Select the PROFINET IO Connector in "Choose an Adapter" and all "profinetxadriver" in "choose a tag":
+
+![Data_Service_Variables](graphics/Data_Service_Data_Service_Variable.PNG)
+
+click on "Aspects" and select variables if you want to display the variables e.g. in Performance Insight.
+
+![Data_Service_Aspects](graphics/Data_Service_Data_Service_Aspects.PNG)
