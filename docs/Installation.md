@@ -6,7 +6,7 @@
     - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
     - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
-      - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
+    - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
     - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
     - [Configure User Credentials for IE Databus](#configure-user-credentials-for-ie-databus)
     - [Configure Application Settings](#configure-application-settings)
@@ -131,7 +131,7 @@ The PROFINET IO Connector application requires four configuration files that are
 
 ![PROFINET_IO_Configurations_Files](graphics/PROFINET_IO_Configurations_Files.PNG)
 
-#### Configure PROFINET IO with Binary format
+### Configure PROFINET IO with Binary format
 
 The binary format is designed for higher performance.
 
