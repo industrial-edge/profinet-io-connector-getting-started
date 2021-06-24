@@ -2,13 +2,16 @@
 
 - [Configuration](#configuration)
   - [Configure Device Layer 2 access](#configure-device-layer-2-access)
-  - [Configure PLC Connection](#configure-plc-connection)
-    - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
+    - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
     - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
       - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
-      - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
+    - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
+    - [Configure User Credentials for IE Databus](#configure-user-credentials-for-ie-databus)
+    - [Configure Application Settings](#configure-application-settings)
+    - [Configure Tag Definition](#configure-tag-definition)
+    - [Update All Configurations Files from Management (IEM)](#update-all-configurations-files-from-management-iem)
   - [Configure Databus and Data Service](#configure-databus-and-data-service)
     - [Configure Databus](#configure-databus)
     - [Configure Data Service](#configure-data-service)
@@ -39,7 +42,7 @@ Layer 2 configuration example:
 
 ![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
 
-## Configure PLC Connection
+## Configure PROFINET IO Connector 
 
 To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection with the PLC via PROFINET.
 
@@ -52,16 +55,7 @@ In order to build this infrastructure, these apps must be configured properly:
 - Data Service
 - PROFINET IO Connector
 
-Note: During the first installation, the PROFINET IO connector is installed without files. The configuration files are configured later and uploaded to the app.
-
-### TIA Portal HSP for PN Driver
-
-The PNDriver V2.2 is not included automatically in TIA Portal V16. You have to install the HSP (Hardware Support Package).
-You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
-
-![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
-
-## Configure PROFINET IO Connector 
+Note: During the first installation, the PROFINET IO connector is installed without files. The configuration files are configured later [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files) and uploaded to the app.
 
 The PROFINET IO Connector app can be adjusted according the project's needs. 
 Configurarion files enable to configure the behavior of the app.
@@ -76,6 +70,13 @@ https://support.industry.siemens.com/cs/us/en/view/109793251
 - optional Tag Definition file (pn_hs_adpt_tagdefs.json)
 
 The Profinet configuration is configured with the SIMATIC TIA Portal.
+
+### TIA Portal HSP for PN Driver
+
+The PNDriver V2.2 is not included automatically in TIA Portal V16. You have to install the HSP (Hardware Support Package).
+You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
+
+![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
 
 ### Configure PROFINET IO Connector in TIA Portal
 
@@ -103,13 +104,14 @@ Check the transfer area from the I-Device communication.
 
 ![TIA_I_Device_Communication_Transfer](graphics/TIA_I_Device_Communication_Transfer.PNG)
 
-Example of tag table in TIA Portal.
+The output variables for the PROFINET IO controller are defined in the tag table. 
+Select the respective variables from the "GDB DB1" and add them as output in the tag table.
 
 ![TIA_Tag_Definition](graphics/TIA_Tag_Definition.PNG)
 
-Corresponding Tag Definition File.
+Add the tag name from the tag table to the "Main OB1".
 
-![Tag_Definition_file](graphics/Tag_Definition_file.PNG)
+![TIA_Main_OB1_Definition](graphics/TIA_Main_OB1_Definition.PNG)
 
 Compile the PROFINET Driver to create the XML configuration file.
 This file you have to provide to the PROFINET IO Connector application.
@@ -118,33 +120,69 @@ This file you have to provide to the PROFINET IO Connector application.
 
 ### Configure PROFINET IO Configuration Files
 
-The PROFINET IO Connector application requires four configuration files:
+You have a choice in the PROFINET IO Connector between binary and JSON format. You must use the existing configuration files for the respective format.
+
+The PROFINET IO Connector application requires four configuration files that are available in the JSON or Binary folder:
 
 - User credentials for IE Databus (pn_hs_adpt_credentials.xml)
 - Application settings (pn_hs_adpt_appconfig.xml)
 - Profinet configuration (e.g. generated from TIA Portal)
 - optional Tag Definition File (pn_hs_adpt_tagdefs.json)
 
-Hint: When you change any config file, you have to restart the app (e.g. via the Web UI of the IEM) to activate the changed configuration!
-
 ![PROFINET_IO_Configurations_Files](graphics/PROFINET_IO_Configurations_Files.PNG)
 
 #### Configure PROFINET IO with Binary format
 
-The binary format is designed for higher performance and is required for the data service.
-Note: The Data Service only supports the binary structure and not the JSON structure.
+The binary format is designed for higher performance.
 
 For the binary format, the respective binary files must be uploaded in the Profinet IO Connector.
 
 ![PROFINET_IO_Configurations_Binary_File](graphics/PROFINET_IO_Configurations_Binary_File.PNG)
 
-#### Configure PROFINET IO with JSON format
+### Configure PROFINET IO with JSON format
 
 The JSON format is for easier handling on the client side.
 
 For the JSON format, the respective JSON files must be uploaded in the Profinet IO Connector.
 
 ![PROFINET_IO_Configurations_JSON_File](graphics/PROFINET_IO_Configurations_JSON_File.PNG)
+
+### Configure User Credentials for IE Databus
+
+The XML file pn_hs_adpt_appconfig.xml shows user and password for the IE Databus (MQTT broker). This configuration must match the IE Databus configuration.
+
+![PROFINET_IO_Configuration_user_cred_file](graphics/PROFINET_IO_Configuration_user_cred_file.PNG)
+
+### Configure Application Settings
+
+The XML file pn_hs_adpt_appconfig.xml contains several parameters for the PROFINET IO Connector app. Every line has a comment. You can adjust the parameters according your needs, e.g.
+
+- name of the PN config file, created by TIA Portal
+- name of the optional tag defintion file
+- MQTT topic names for published and subsribed topics
+- Cycle time for reading the PN IO data
+- Oversampling factor (how many PN IO cycles are transferred with one MQTT message)
+
+![PROFINET_IO_Configuration_appconfig_file](graphics/PROFINET_IO_Configuration_appconfig_file.PNG)
+
+### Configure Tag Definition
+
+The XML file pn_hs_adpt_tagdefs.json shows the configured Tags. This configuration must match the tag table configuration.
+
+![Tag_Definition_file](graphics/Tag_Definition_file.PNG)
+
+Properties for tag definition
+
+![PROFINET_IO_Configuration_properties_tag_definition](graphics/PROFINET_IO_Configuration_properties_tag_definition.PNG)
+
+### Update All Configurations Files from Management (IEM)
+
+You can download all or selected config files with the Management (IEM).
+IEM >> My Installed Apps >> PROFINET IO Connector >> Update Configuration
+
+Hint: When you change any config file, you have to restart the app (e.g. via the Web UI of the IEM) to activate the changed configuration!
+
+![PROFINET_IO_Configurations_Files_upload](graphics/PROFINET_IO_Configurations_Files_upload.PNG)
 
 ## Configure Databus and Data Service 
 
