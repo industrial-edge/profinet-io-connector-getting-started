@@ -1,6 +1,6 @@
 # PROFINET IO Connector application example
 
-This example shows how to use the Industrial Edge App “PROFINET IO Connector” 
+This example shows how to use the Industrial Edge App “PROFINET IO Connector”.
 
 - [PROFINET IO Connector application example](#profinet-io-connector-application-example)
   - [Description](#description)
@@ -35,7 +35,7 @@ The IE Databus will transfer the data from the PROFINET IO Connector for further
 ###  Prerequisities
 
 - Access to an Industrial Edge Management System (IEM)
-- Onboarded Industial Edge Device on IEM
+- Onboarded Industial Edge Device (IED) on IEM
 - Installed System Configurators for Databus and S7 Connector
 - Installed System Apps Databus and S7 Connector
 - Installed Apps Data Service, PROFINET IO Connector
@@ -67,13 +67,13 @@ The used TIA Portal project can be found in the [miscellenous repository](https:
 ## Configuration steps
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
-- Configure Device Layer 2
+- Configure IED Layer 2 access
 - Configure PROFINET IO Connector
 - Configure Databus and Data Service
 
 ## Usage
 
-Once the PROFINET IO Connector App is configured, data can be read from the PLC in binary or Json form and made available for further processing in the Flow Creator or in the Data Service.
+Once the PROFINET IO Connector App is configured, data can be read from the PLC in binary or json form and made available for further processing in the Data Service or in the Flow Creator.
 
 ## Documentation
 
