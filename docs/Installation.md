@@ -34,13 +34,9 @@ Click on the "+" button at the top right to configure the network interface.
 
 Configure the network interface and the layer 2 access and click on "add".
 
-![Confiture_Device_Layer_2_Access](graphics/Configure_Device_Layer_2_Access.PNG)
+![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
 
 Confirm the device configuration with "Next" and with "Create".
-
-Layer 2 configuration example:
-
-![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
 
 ## Configure PROFINET IO Connector
 
