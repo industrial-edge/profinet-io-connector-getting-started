@@ -21,7 +21,7 @@ This example shows how to use the Industrial Edge App â€œPROFINET IO Connectorâ€
 
 ### Overview
 
-This document describes how you can implements a PROFINET Controller which cyclically reads the PN IO data of the configured PROFINET network.
+This document describes how you can implement a PROFINET Controller which cyclically reads the PN IO data of the configured PROFINET network.
 
 ![overview](docs/graphics/Overview.PNG)
 
