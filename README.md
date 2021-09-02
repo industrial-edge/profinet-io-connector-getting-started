@@ -60,9 +60,7 @@ The IE Databus will transfer the data from the PROFINET IO Connector for further
 
 ### TIA Project
 
-The used TIA Portal project can be found in the [miscellenous repository](https://github.com/industrial-edge/miscellaneous/tree/main/tank%20application) under the following name and is also used for several further application examples:
-
-- [tia-tank-application.7z](https://github.com/industrial-edge/miscellaneous/blob/main/tank%20application/tia-tank-application.7z)
+The used TIA Portal project can be found in the [miscellenous repository](https://github.com/industrial-edge/miscellaneous) and is also used for several further application examples.
 
 ## Configuration steps
 
