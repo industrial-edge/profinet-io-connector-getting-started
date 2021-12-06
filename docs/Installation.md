@@ -20,7 +20,7 @@
 
 The PROFINET IO Connector requires Layer 2 access within the IED to enable a communication with the PLC.
 
-Hint: Layer 2 access can only be configured for a new IED, not later.
+Hint: From version ied-os-1.3.0-57, L2 layer can be configured after onboarding of IED. Previous versions support setting L2 layer **only** during onboarding.
 
 Open the management system and select "My Edge Devices" on the left side in the bar.
 
