@@ -36,8 +36,8 @@ The IE Databus will transfer the data from the PROFINET IO Connector for further
 
 - Access to an Industrial Edge Management System (IEM)
 - Onboarded Industial Edge Device (IED) on IEM
-- Installed System Configurators for Databus and S7 Connector
-- Installed System Apps Databus and S7 Connector
+- Installed System Configurators for Databus
+- Installed System Apps Databus
 - Installed Apps Data Service, PROFINET IO Connector
 - Edge device is connected to PLC
 - TIA portal project loaded on PLC (e.g. for filling application)
@@ -46,8 +46,6 @@ The IE Databus will transfer the data from the PROFINET IO Connector for further
 ### Used components
 
 - Industrial Edge Management (IEM) V1.2.0-34
-- S7 Connector Configurator V1.2.32
-- S7 Connector V1.2.26
 - IE Databus Configurator V1.2.23
 - IE Databus V1.2.16
 - Data Service 1.1.1
