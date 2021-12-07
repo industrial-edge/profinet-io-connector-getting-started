@@ -83,7 +83,7 @@ Next you have to add to the PROFINET Driver the Linux native communication inter
 
 ![TIA_PROFINET_Driver_Linux](graphics/TIA_PROFINET_Driver_Linux.PNG)
 
-The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver.
+The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet.
 
 Click on the PLC properties and select the PROFINET Driver under IO device.
 
