@@ -101,7 +101,7 @@ The output variables for the PROFINET IO controller are defined in the tag table
 
 ![TIA_Tag_Definition](graphics/TIA_Tag_Definition.PNG)
 
-Next, this tags needs to be populated. So, in PLC program, assign the respective values to the output variables (e.g. in OB1).
+Next, this tag needs to be populated. So, in PLC program, assign the respective values to the output variables (e.g. in OB1). Here everything from `"GDB".signals` is copied to `SignalsOut`.
 
 ![TIA_Main_OB1_Definition](graphics/TIA_Main_OB1_Definition.PNG)
 
@@ -166,6 +166,24 @@ The XML file pn_hs_adpt_tagdefs.json shows the configured Tags. This configurati
 Properties for tag definition
 
 ![PROFINET_IO_Configuration_properties_tag_definition](graphics/PROFINET_IO_Configuration_properties_tag_definition.PNG)
+
+The supported data types for tag definitions are as follows:
+
+- SimpleTagTypeBool
+- SimpleTagTypeByte
+- SimpleTagTypeWord
+- SimpleTagTypeDWord
+- SimpleTagTypeLWord
+- SimpleTagTypeSInt
+- SimpleTagTypeInt
+- SimpleTagTypeDInt
+- SimpleTagTypeLInt
+- SimpleTagTypeUSInt
+- SimpleTagTypeUInt
+- SimpleTagTypeUDInt
+- SimpleTagTypeULInt
+- SimpleTagTypeReal
+- SimpleTagTypeLReal
 
 ### Update All Configurations Files from Management (IEM)
 
