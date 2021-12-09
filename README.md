@@ -45,14 +45,14 @@ The IE Databus will transfer the data from the PROFINET IO Connector for further
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.2.0-34
-- IE Databus Configurator V1.2.23
-- IE Databus V1.2.16
-- Data Service 1.1.1
-- PROFINET IO Connector 1.0.1
-- Industrial Edge Device V 1.2.0-56
-- TIA Portal V16
-- S7-1511
+- Industrial Edge Management (IEM) V1.3.0-58
+- IE Databus Configurator V1.4.22
+- IE Databus V1.3.5
+- Data Service 1.3.0
+- PROFINET IO Connector 1.1.0
+- Industrial Edge Device V 1.3.0-57
+- TIA Portal V17
+- S7-1515
 - Web browser (Mozilla or Chrome)
 
 
