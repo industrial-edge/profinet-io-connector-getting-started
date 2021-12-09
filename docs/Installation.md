@@ -20,7 +20,7 @@
 
 The PROFINET IO Connector requires Layer 2 access within the IED to enable a communication with the PLC.
 
-Hint: Layer 2 access can only be configured for a new IED, not later.
+Hint: From version ied-os-1.3.0-57, L2 layer can be configured after onboarding of IED. Previous versions support setting L2 layer **only** during onboarding.
 
 Open the management system and select "My Edge Devices" on the left side in the bar.
 
@@ -79,17 +79,17 @@ Select the PROFINET Driver from the catalog.
 
 ![TIA_PROFINET_Driver](graphics/TIA_PROFINET_Driver.PNG)
 
-Next you have to add to the PROFINET Driver the Linux native communication interface.
+Next, you have to add Linux native communication interface to the PROFINET Driver.
 
 ![TIA_PROFINET_Driver_Linux](graphics/TIA_PROFINET_Driver_Linux.PNG)
 
-The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver.
+The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet.
 
-Click on the PLC properties and select the PROFINET Driver under IO device.
+Click on the PLC properties. Go to PROFINET interface [X1] and inside Operation mode, select IO device. Also, assign PROFINET driver to IO controller.
 
 ![TIA_PLC_PROFINET_Interface](graphics/TIA_PLC_PROFINET_Interface.PNG)
 
-Click on "I-device communication" in the PLC properties, add a new transfer area and define the inputs, outputs and the length.
+Click on "I-device communication" in the PLC properties, add a new transfer area and name it. Inside newly created transfer area, define the address type (inputs, outputs), starting address and the length of area. In our case, output variables from PLC are inputs to PROFINET Driver. This way, selected PLC memory becomes available for access through PROFINET network.
 
 ![TIA_I_Device_Communication](graphics/TIA_I_Device_Communication.PNG)
 
@@ -97,12 +97,11 @@ Check the transfer area from the I-Device communication.
 
 ![TIA_I_Device_Communication_Transfer](graphics/TIA_I_Device_Communication_Transfer.PNG)
 
-The output variables for the PROFINET IO controller are defined in the tag table.
-Select the respective variables from the "GDB DB1" and add them as output in the tag table.
+The output variables for the PROFINET IO controller are defined in the tag table. Open Default tag table in PLC. Create output variable `SignalsOut` with custom data type `typeSignals`. In Address field, enter the starting address of tag. Pay attention that transfer area is enough to store all variables.
 
 ![TIA_Tag_Definition](graphics/TIA_Tag_Definition.PNG)
 
-In the programm, assign the respective values to the output parameter (e.g. in OB1).
+Next, this tag needs to be populated. So, in PLC program, assign the respective values to the output variables (e.g. in OB1). Here, everything from `"GDB".signals` is copied to `SignalsOut`.
 
 ![TIA_Main_OB1_Definition](graphics/TIA_Main_OB1_Definition.PNG)
 
@@ -167,6 +166,24 @@ The XML file pn_hs_adpt_tagdefs.json shows the configured Tags. This configurati
 Properties for tag definition
 
 ![PROFINET_IO_Configuration_properties_tag_definition](graphics/PROFINET_IO_Configuration_properties_tag_definition.PNG)
+
+The supported data types for tag definitions are as follows:
+
+- SimpleTagTypeBool
+- SimpleTagTypeByte
+- SimpleTagTypeWord
+- SimpleTagTypeDWord
+- SimpleTagTypeLWord
+- SimpleTagTypeSInt
+- SimpleTagTypeInt
+- SimpleTagTypeDInt
+- SimpleTagTypeLInt
+- SimpleTagTypeUSInt
+- SimpleTagTypeUInt
+- SimpleTagTypeUDInt
+- SimpleTagTypeULInt
+- SimpleTagTypeReal
+- SimpleTagTypeLReal
 
 ### Update All Configurations Files from Management (IEM)
 
