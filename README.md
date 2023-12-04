@@ -75,15 +75,14 @@ Once the PROFINET IO Connector application is configured, the data can be read f
 ## Documentation
 
 You can find further documentation and help in the following links
+  - [PROFINET IO Connector documentation](https://cache.industry.siemens.com/dl/files/037/109825037/att_1157413/v2/PROFINET_IO_Connector_enUS_V2.1.0_en-US.pdf)
   - [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
   - [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
   - [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
-  - [PROFINET IO Connector documentation](https://cache.industry.siemens.com/dl/files/037/109825037/att_1157413/v2/PROFINET_IO_Connector_enUS_V2.1.0_en-US.pdf)
   
 ## Contribution
 
-Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section.
-Additionally everybody is free to propose any changes to this repository using Pull Requests.
+Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section. Additionally everybody is free to propose any changes to this repository using Pull Requests.
 
 If you haven't previously signed the [Siemens Contributor License Agreement](https://cla-assistant.io/industrial-edge/) (CLA), the system will automatically prompt you to do so when you submit your Pull Request. This can be conveniently done through the CLA Assistant's online platform. Once the CLA is signed, your Pull Request will automatically be cleared and made ready for merging if all other test stages succeed.
 
