@@ -18,13 +18,13 @@
    
 ## Installation of necessary applications
 
-In order to try out the main functionalities of SIMATIC AX Trace Diagnostics application and the application example itself, the following applications should be installed on your IED or IEVD:
+In order to make this getting started working, the following applications should be installed on your IED or IEVD:
 
 
 
 ## Configuration of Databus
 
-In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED (or IEVD).
+In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED.
 
 
 
