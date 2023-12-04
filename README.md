@@ -79,7 +79,7 @@ You can find further documentation and help in the following links
   - [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
   - [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
   - [PROFINET IO Connector documentation](https://cache.industry.siemens.com/dl/files/037/109825037/att_1157413/v2/PROFINET_IO_Connector_enUS_V2.1.0_en-US.pdf)
-  - [PROFINET IO Connector documentation](https://cache.industry.siemens.com/dl/files/037/109825037/att_1157413/v2/PROFINET_IO_Connector_enUS_V2.1.0_en-US.pdf](https://github.com/industrial-edge/livetwin-earthquake-detection/blob/main/docs/export_simulink_model.md)
+  - [PROFINET IO Connector documentation](https://github.com/industrial-edge/livetwin-earthquake-detection/blob/main/docs/export_simulink_model.md)
   
 ## Contribution
 
