@@ -44,16 +44,15 @@ In this example the PN IO data of PROFINET network are cyclically read using the
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.3.0-58
-- IE Databus Configurator V1.4.22
-- IE Databus V1.3.5
-- Data Service 1.3.0
-- PROFINET IO Connector 1.1.0
-- Industrial Edge Device V 1.3.0-57
-- TIA Portal V17
-- S7-1515
-- Web browser (Mozilla or Chrome)
-
+- Industrial Edge Management (IEM) V1.5.2-4
+- Industrial Edge Device (IED) IPC227E V1.12.0-10
+- Common Configurator V1.8.1-1
+- Registry Service V1.8.0-4
+- PROFINET IO Connector 2.1.0-4
+- IIH Essentials V1.8.1
+- TIA Portal V18
+- S7-1515-2 PN
+- Web browser (Google Chrome)
 
 ### TIA Project
 
@@ -63,12 +62,12 @@ The used TIA Portal project can be found in the [miscellenous repository](https:
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Configure IED Layer 2 access
-- Configure PROFINET IO Connector
-- Configure Databus and Data Service
+- Configure PROFINET IO Connector in Common Configurator
+- Configure Databus and tags in IIH Essentials
 
 ## Usage
 
-Once the PROFINET IO Connector App is configured, data can be read from the PLC in binary or json form and made available for further processing in the Data Service or in the Flow Creator.
+Once the PROFINET IO Connector application is configured, the data can be read from the PLC in binary or JSON form and made available for further processing in the IIH Essentials or in the Flow Creator.
 
 ## Documentation
 
