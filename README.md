@@ -15,7 +15,7 @@ This example shows how to use the Industrial Edge App â€œPROFINET IO Connectorâ€
   - [Documentation](#documentation)
   - [Contribution](#contribution)
   - [Licence and Legal Information](#licence-and-legal-information)
-
+  - [Disclaimer](#Disclaimer)
 
 ## Description
 
