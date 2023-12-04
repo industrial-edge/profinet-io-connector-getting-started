@@ -35,11 +35,13 @@ In this example the PN IO data of PROFINET network are cyclically read using the
 
 - Access to an Industrial Edge Management System (IEM)
 - Onboarded Industial Edge Device (IED) on IEM
-- Installed System Configurators for Databus
-- Installed System Apps Databus
-- Installed Apps Data Service, PROFINET IO Connector
-- Edge device is connected to PLC
-- TIA portal project loaded on PLC (e.g. for filling application)
+- Installed system configurator for Databus
+- Installed system app Databus
+- Installed apps Common Configurator, Registry service, PROFINET IO Connector and IIH Essetials
+- IED is connected to PLC
+- IED is in the same network as PLC (PLC is reachable from IED)
+- The PROFINET Driver configured correctly in TIA Portal project
+- TIA Portal project loaded on PLC (EdgeHowTos including the Tank application)
 - Google Chrome (Version ≥ 72) or Firefox (Version ≥ 62)
 
 ### Used components
