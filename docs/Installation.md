@@ -1,4 +1,4 @@
-# Configuration
+# PROFINET IO Connector Getting Started: Documentation
 
 - [Configuration](#configuration)
   - [Configure IED Layer 2 access](#configure-ied-layer-2-access)
