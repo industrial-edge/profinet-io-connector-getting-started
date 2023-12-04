@@ -1,4 +1,4 @@
-# PROFINET IO Connector application example
+# PROFINET IO Connector Getting Started
 
 This example shows how to use the Industrial Edge App “PROFINET IO Connector”.
 
