@@ -27,8 +27,7 @@ This document describes how you can implement a PROFINET IO Controller which cyc
 
 ### General task
 
-This example cyclically reads PN IO data of a configured PROFINET network. The data are published via the PROFINET IO Connector in binary data form or JSON data form on the IE databus. First, the PROFINET IO Connector must be configured in the Common Configurator application. The XML file exported from TIA Portal including the PROFINET configuration should be uploaded in this step.
-The IE Databus will transfer the data from the PROFINET IO Connector for further processing under the respective topic. This data can be further processed in the applicatios such as IIH Essentials or FlowCreator.
+In this example the PN IO data of PROFINET network are cyclically read using the PROFINET IO Connector application. The data are published via the PROFINET IO Connector in binary data form or JSON data form on the IE databus. First, the PROFINET IO Connector must be configured in the Common Configurator application. The XML file exported from TIA Portal including the PROFINET configuration should be uploaded in this step. The IE Databus will transfer the data from the PROFINET IO Connector for further processing under the respective topic. This data can be further processed in the applicatios such as IIH Essentials or FlowCreator.
 
 ## Requirements
 
