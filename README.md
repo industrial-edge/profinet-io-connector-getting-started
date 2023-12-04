@@ -56,7 +56,7 @@ In this example the PN IO data of PROFINET network are cyclically read using the
 
 ### TIA Project
 
-The used TIA Portal project can be found in the [miscellenous repository](https://github.com/industrial-edge/miscellaneous/tree/main/tank%20application). This project is also used for several further application examples. It is preferred to configure the PROFINET Driver on your own to be aware of configuration. In case of some issues in TIA Portal, the same project where the mentioned configuration is already done can be found in the [src](src) directory under the following name: 
+The used TIA Portal project can be found in the [miscellenous repository](https://github.com/industrial-edge/miscellaneous/tree/main/tank%20application). This project is also used for several further application examples. It is preferred to configure the PROFINET Driver from scratch to be aware of configuration. In case of some issues in TIA Portal, the same project where the mentioned configuration is already done can be found in the [src](src) directory under the following name: 
 - [EdgeHowTos.7z](src/EdgeHowTos.7z).
 
 ## Configuration steps
