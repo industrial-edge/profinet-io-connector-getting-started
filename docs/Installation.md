@@ -20,7 +20,7 @@
 
 In order to make this getting started working, the following applications should be installed on your IED or IEVD:
 
-
+![Installed_apps](graphics/Installed_apps.png)
 
 ## Configuration of Databus
 
