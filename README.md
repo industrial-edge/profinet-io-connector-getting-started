@@ -21,14 +21,14 @@ This example shows how to use the Industrial Edge App â€œPROFINET IO Connectorâ€
 
 ### Overview
 
-This document describes how you can implement a PROFINET Controller which cyclically reads the PN IO data of the configured PROFINET network.
+This document describes how you can implement a PROFINET IO Controller which cyclically reads the PN IO data of the configured PROFINET network.
 
 ![overview](docs/graphics/Overview.png)
 
 ### General task
 
-This example cyclically reads PN IO data of a configured PROFINET network. The data is published via the PROFINET IO Connector in binary data form or Json data form on the IE data bus. First, the PROFINET IO Connector must be configured with the respective app configuration files and must be selected during the installation of the PROFINET IO Connector. The files are used to make various settings for the PROFINET IO Connector. 
-The IE Databus will transfer the data from the PROFINET IO Connector for further processing under the respective topic. This data can be further processed in the FlowCreator or in the Data Service.
+This example cyclically reads PN IO data of a configured PROFINET network. The data are published via the PROFINET IO Connector in binary data form or JSON data form on the IE databus. First, the PROFINET IO Connector must be configured in the Common Configurator application. The XML file exported from TIA Portal including the PROFINET configuration should be uploaded in this step.
+The IE Databus will transfer the data from the PROFINET IO Connector for further processing under the respective topic. This data can be further processed in the applicatios such as IIH Essentials or FlowCreator.
 
 ## Requirements
 
