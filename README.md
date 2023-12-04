@@ -2,7 +2,7 @@
 
 This example shows how to use the Industrial Edge App “PROFINET IO Connector”.
 
-- [PROFINET IO Connector application example](#profinet-io-connector-application-example)
+- [PROFINET IO Connector Getting Started](#profinet-io-connector-getting-started)
   - [Description](#description)
     - [Overview](#overview)
     - [General task](#general-task)
