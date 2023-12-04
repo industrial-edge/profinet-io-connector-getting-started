@@ -1,6 +1,6 @@
 # PROFINET IO Connector Getting Started: Documentation
 
-- [Configuration](#configuration)
+- [PROFINET IO Connector Getting Started: Documentation](#profinet-io-connector-getting-started-documentation)
   - [Configure IED Layer 2 access](#configure-ied-layer-2-access)
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
     - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
