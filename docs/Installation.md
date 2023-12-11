@@ -24,18 +24,11 @@ In order to make this getting started working, the following applications should
 
 ## Configuration of Databus
 
-In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED.
+In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED (or IEVD).
 
+![Databus_configuration_1](graphics/Databus_configuration_1.png)
 
-
-
-
-
-
-
-
-
-
+![Databus_configuration_2](graphics/Databus_configuration_2.png)
 
 ## Configure IED Layer 2 access
 
