@@ -32,8 +32,6 @@ In your IEM go to the Data Connections and open the Databus. Add a user with fol
 
 ![Databus_configuration_4](graphics/Databus_configuration_4.png)
 
-% add
-
 ## Configure IED Layer 2 access
 
 The PROFINET IO Connector requires Layer 2 access within the IED to enable a communication with the PLC.
