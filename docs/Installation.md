@@ -88,8 +88,7 @@ In order to manage a communication between PLC and IED, the PROFINET Driver shou
 > [!NOTE]  
 > If the TIA Portal V16 or older is used, the PNDriver V2.2 is not included automatically in there. Therefore, the HSP (Hardware Support Package) has to be installed. You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
 
-![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
-
+![TIA_Portal_HSP_PN_IO_Driver](graphics/TIA_Portal_HSP_PN_IO_Driver.png)
 
 Click "Devices & Network" at the top of the left side.
 
