@@ -8,3 +8,10 @@
 In order to configure the PROFINET IO Conenctor in IED, the following applications should be installed on your IED:
 
 ![Installed_apps](graphics/Installed_apps.png)
+
+> [!NOTE]  
+> It is assumed that Databus is already configured.
+
+
+
+
