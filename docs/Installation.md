@@ -91,28 +91,6 @@ There are two ways how to configure the PROFINET IO Connector
 
 ## Configure PROFINET IO Connector
 
-To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection a with the PLC via PROFINET.
-
-The PROFINET IO Connector sends the data to the Databus, where the Data Service app can collect what is needed.
-
-In order to build this infrastructure, these parts must be configured properly:
-
-- TIA Portal HSP for PN Driver
-- Databus
-- Data Service
-- PROFINET IO Connector
-
-Note: When installing the PROFINET IO connector, no configuration files need to be selected. These are configured later [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files) and uploaded to the app.
-
-The PROFINET IO Connector app can be adjusted according to the project's needs. Configuration files enable to configure the behavior of the app.
-
-An example of the required PROFINET IO Connector files can be downloaded [here](https://support.industry.siemens.com/cs/us/en/view/109793251) under "Appendix":
-
-- User credentials for IE Databus (pn_hs_adpt_credentials.xml)
-- Application settings (pn_hs_adpt_appconfig.xml)
-- Profinet configuration (e.g. gerated from TIA Portal)
-- optional Tag Definition file (pn_hs_adpt_tagdefs.json)
-
 The Profinet configuration is configured with the SIMATIC TIA Portal.
 
 ### TIA Portal HSP for PN Driver
