@@ -124,48 +124,6 @@ Finally, compile the PROFINET Driver to create the XML configuration file. This 
 
 When all of the steps above are done, you can download the project to the PLC. Be aware that only physical PLC can be used. The PROFINET doesn't work on simulated PLC.
 
-## Configure Databus and Data Service
-
-### Configure Databus
-
-In your IEM open the Databus and launch the configurator.
-
-Add a user with this topic:
-`"ie/d/b/simatic/v1/pnhs1/dp/r"`
-`"ie/m/j/simatic/v1/pnhs1/dp/r"`
-
-![ie_databus_user](graphics/IE_Databus_User.PNG)
-
-![ie_databus](graphics/IE_Databus.PNG)
-
-Deploy the configuration.
-
-### Configure Data Service
-
-Open the Data Service in the IED.
-
-Click on adapters and chosse the PROFINET IO Connector:
-
-![Data_Service_Adapter](graphics/Data_Service_Adapters_Profinet_IO_Connctor.PNG)
-
-Take the settings what you have used in the Databus:
-
-![Data_Service_PROFINET_IO_Connector](graphics/Data_Service_PROFINET_IO_Connector.PNG)
-
-Activate the adapter for PROFINET IO Connector:
-
-![Data_Service_Adapter](graphics/Data_Service_Adapters.PNG)
-
-Click on "Assets & Connectivity" at the top of the left-hand page and create your first variables.
-
-Select the PROFINET IO Connector in "Choose an Adapter" and all "profinetxadriver" in "choose a tag":
-
-![Data_Service_Variables](graphics/Data_Service_Data_Service_Variable.PNG)
-
-Click on "Aspects" and select variables if you want to display the variables e.g. in Performance Insight.
-
-![Data_Service_Aspects](graphics/Data_Service_Data_Service_Aspects.PNG)
-
 ## Configure PROFINET IO Connector
 
 There are two ways how to configure the PROFINET IO Connector
