@@ -81,12 +81,6 @@ There are two ways how to configure the PROFINET IO Connector
 1. [Directly in IED](Configuration_IED.md) - using Common Configurator application (newest and preferable way)
 2. [In IEM](Configuration_IEM.md) - PROFINET IO Configuration Files (older and more complicated way)
 
-## Installation of necessary applications
-
-In order to make this getting started working, the following applications should be installed on your IED:
-
-![Installed_apps](graphics/Installed_apps.png)
-
 ## Configure PROFINET IO Connector
 
 To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection a with the PLC via PROFINET.
