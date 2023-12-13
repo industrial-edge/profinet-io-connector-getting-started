@@ -79,6 +79,16 @@ Configure the layer 2 access and click on "Update".
 
 ![Layer_2_configuration_after_onboarding_3](graphics/Layer_2_configuration_after_onboarding_3.png)
 
+
+## Configure PROFINET Driver in TIA Portal
+
+
+## Configure PROFINET IO Connector
+
+There are two ways how to configure the PROFINET IO Connector
+1. Directly in IED - using Common Configurator application (newest and preferable way): described in here
+2. In IEM - PROFINET IO Configuration Files (older and more complicated way): described in here
+
 ## Configure PROFINET IO Connector
 
 To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection a with the PLC via PROFINET.
