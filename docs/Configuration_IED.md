@@ -14,6 +14,9 @@ In order to configure the PROFINET IO Conenctor in IED and check the received da
 
 Apart from Databus Configurator it is also necessary to have Common Connector Configurator installed in the IEM Maitenance. 
 
+![Installed_apps_IEM_Maintenance](graphics/Installed_apps_IEM_Maintenance.png)
+
+
 
 
 
