@@ -78,8 +78,8 @@ In your IEM go to the Data Connections and open the Databus. Add a user with fol
 ## Configure PROFINET IO Connector
 
 There are two ways how to configure the PROFINET IO Connector
-1. [Directly in IED](docs/Configuration_IED.md) - using Common Configurator application (newest and preferable way)
-2. [In IEM](docs/Configuration_IEM.md) - PROFINET IO Configuration Files (older and more complicated way)
+1. [Directly in IED](Configuration_IED.md) - using Common Configurator application (newest and preferable way)
+2. [In IEM](Configuration_IEM.md) - PROFINET IO Configuration Files (older and more complicated way)
 
 ## Installation of necessary applications
 
