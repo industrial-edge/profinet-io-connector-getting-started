@@ -10,7 +10,7 @@ In order to configure the PROFINET IO Conenctor in IED, the following applicatio
 ![Installed_apps](graphics/Installed_apps.png)
 
 > [!NOTE]  
-> It is assumed that Databus is already configured.
+> It is assumed that the Databus is already configured.
 
 
 
