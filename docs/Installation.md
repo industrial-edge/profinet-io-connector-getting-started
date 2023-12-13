@@ -86,7 +86,7 @@ Then, in your IEM go to the Data Connections and open the Databus. Add a user wi
 In order to manage a communication between PLC and IED, the PROFINET Driver should be configured in TIA Portal.
 
 > [!NOTE]  
-> If the TIA Portal V16 and older is used, the PNDriver V2.2 is not included automatically in there. Therefore, the HSP (Hardware Support Package) has to be installed. You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
+> If the TIA Portal V16 or older is used, the PNDriver V2.2 is not included automatically in there. Therefore, the HSP (Hardware Support Package) has to be installed. You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
 
 ![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
 
