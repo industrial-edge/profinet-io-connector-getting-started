@@ -1,7 +1,4 @@
- 
-    
-    - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
-
+ - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
     - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
     - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
     - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
