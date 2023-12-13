@@ -1,9 +1,11 @@
 # PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector in IED
 
 - [PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector in IED](#profinet-io-connector-getting-started-configuration-of-profinet-io-connector-in-ied)
-  - [Installation of necessary applications](#installation-of-necessary-applications)
+  - [Install necessary applications](#install-necessary-applications)
+  - [Configure PROFINET IO Connector in Common Configurator](#configure-profinet-io-connector-in-common-configurator)
+  - [Read data in IIH Essentials](#read-data-in-iih-essentials)
 
-## Installation of necessary applications
+## Install necessary applications
 
 In order to configure the PROFINET IO Conenctor in IED and check the received data from PLC, the following applications should be installed on your IED:
 
@@ -16,7 +18,7 @@ Apart from Databus Configurator it is also necessary to have Common Connector Co
 
 ![Installed_apps_IEM_Maintenance](graphics/Installed_apps_IEM_Maintenance.png)
 
+## Configure PROFINET IO Connector in Common Configurator
 
 
-
-
+## Read data in IIH Essentials
