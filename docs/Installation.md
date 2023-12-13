@@ -90,64 +90,35 @@ In order to manage a communication between PLC and IED, the PROFINET Driver shou
 
 ![TIA_Portal_HSP_PN_IO_Driver](graphics/TIA_Portal_HSP_PN_IO_Driver.png)
 
-By double clicking open "Devices & Network" at the top of the left side.
+By double clicking open "Devices & Network" at the top of the left side. Then, select the PROFINET Driver from the catalog, drag it and drop it into the "Network view" field.
 
 ![TIA_Portal_PN_IO_Driver_configuration_1](graphics/TIA_Portal_PN_IO_Driver_configuration_1.png)
 
-Select the PROFINET Driver from the catalog, drag it and drop it into the "Network view" field.
+Next, you have to add Linux native communication interface to the PROFINET Driver. Drag in and drop into the PROFINET interface of the PROFINET Driver in "Device view" field.
 
 ![TIA_Portal_PN_IO_Driver_configuration_2](graphics/TIA_Portal_PN_IO_Driver_configuration_2.png)
 
-Next, you have to add Linux native communication interface to the PROFINET Driver. Drag in and drop into the PROFINET interface of the PROFINET Driver in "Device view" field.
+The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet. Then, click on the PLC properties. Go to "PROFINET interface [X1]" and inside Operation mode, select IO device. Also, assign PROFINET driver to IO controller.
 
 ![TIA_Portal_PN_IO_Driver_configuration_3](graphics/TIA_Portal_PN_IO_Driver_configuration_3.png)
 
-The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet.
+Click on "I-device communication" in the PLC properties, add a new transfer area and name it. Inside newly created transfer area, define the address type (inputs, outputs), starting address and the length of area. In our case, output variables from PLC are inputs to PROFINET Driver. This way, selected PLC memory becomes available for access through PROFINET network.
 
 ![TIA_Portal_PN_IO_Driver_configuration_4](graphics/TIA_Portal_PN_IO_Driver_configuration_4.png)
 
+Check the transfer area from the I-Device communication.
+
 ![TIA_Portal_PN_IO_Driver_configuration_5](graphics/TIA_Portal_PN_IO_Driver_configuration_5.png)
+
+The output variables for the PROFINET IO controller should be defined in the tag table. Open Default tag table of PLC. Create output variable `SignalsOut` with custom data type `typeSignals`. In Address field, enter the starting address of tag. Pay attention that the transfer area has enough bytes to store all variables.
 
 ![TIA_Portal_PN_IO_Driver_configuration_6](graphics/TIA_Portal_PN_IO_Driver_configuration_6.png)
 
-![TIA_Portal_PN_IO_Driver_configuration_7](graphics/TIA_Portal_PN_IO_Driver_configuration_7.png)
-
-
-
-
-
-
-
-![TIA_PROFINET_Driver](graphics/TIA_PROFINET_Driver.PNG)
-
-
-
-![TIA_PROFINET_Driver_Linux](graphics/TIA_PROFINET_Driver_Linux.PNG)
-
-
-
-Click on the PLC properties. Go to PROFINET interface [X1] and inside Operation mode, select IO device. Also, assign PROFINET driver to IO controller.
-
-![TIA_PLC_PROFINET_Interface](graphics/TIA_PLC_PROFINET_Interface.PNG)
-
-Click on "I-device communication" in the PLC properties, add a new transfer area and name it. Inside newly created transfer area, define the address type (inputs, outputs), starting address and the length of area. In our case, output variables from PLC are inputs to PROFINET Driver. This way, selected PLC memory becomes available for access through PROFINET network.
-
-![TIA_I_Device_Communication](graphics/TIA_I_Device_Communication.PNG)
-
-Check the transfer area from the I-Device communication.
-
-![TIA_I_Device_Communication_Transfer](graphics/TIA_I_Device_Communication_Transfer.PNG)
-
-The output variables for the PROFINET IO controller are defined in the tag table. Open Default tag table in PLC. Create output variable `SignalsOut` with custom data type `typeSignals`. In Address field, enter the starting address of tag. Pay attention that transfer area is enough to store all variables.
-
-![TIA_Tag_Definition](graphics/TIA_Tag_Definition.PNG)
-
 Next, this tag needs to be populated. So, in PLC program, assign the respective values to the output variables (e.g. in OB1). Here, everything from `"GDB".signals` is copied to `SignalsOut`.
 
-![TIA_Main_OB1_Definition](graphics/TIA_Main_OB1_Definition.PNG)
+![TIA_Portal_PN_IO_Driver_configuration_7](graphics/TIA_Portal_PN_IO_Driver_configuration_7.png)
 
-Compile the PROFINET Driver to create the XML configuration file.
-This file you have to provide to the PROFINET IO Connector application.
+Finally, compile the PROFINET Driver to create the XML configuration file. This file you have to provide later during the configuration of the PROFINET IO Connector application.
 
 ![TIA_PROFINET_Driver_XML](graphics/TIA_PROFINET_Driver_XML.PNG)
 
