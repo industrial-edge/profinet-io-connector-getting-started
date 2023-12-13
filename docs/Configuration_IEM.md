@@ -104,3 +104,46 @@ IEM >> My Installed Apps >> PROFINET IO Connector >> Update Configuration
 Hint: When you change any config file, you have to restart the app (e.g. via the Web UI of the IEM) to activate the changed configuration!
 
 ![PROFINET_IO_Configurations_Files_upload](graphics/PROFINET_IO_Configurations_Files_upload.PNG)
+
+## Configure Databus and Data Service
+
+### Configure Databus
+
+In your IEM open the Databus and launch the configurator.
+
+Add a user with this topic:
+`"ie/d/b/simatic/v1/pnhs1/dp/r"`
+`"ie/m/j/simatic/v1/pnhs1/dp/r"`
+
+![ie_databus_user](graphics/IE_Databus_User.PNG)
+
+![ie_databus](graphics/IE_Databus.PNG)
+
+Deploy the configuration.
+
+### Configure Data Service
+
+Open the Data Service in the IED.
+
+Click on adapters and chosse the PROFINET IO Connector:
+
+![Data_Service_Adapter](graphics/Data_Service_Adapters_Profinet_IO_Connctor.PNG)
+
+Take the settings what you have used in the Databus:
+
+![Data_Service_PROFINET_IO_Connector](graphics/Data_Service_PROFINET_IO_Connector.PNG)
+
+Activate the adapter for PROFINET IO Connector:
+
+![Data_Service_Adapter](graphics/Data_Service_Adapters.PNG)
+
+Click on "Assets & Connectivity" at the top of the left-hand page and create your first variables.
+
+Select the PROFINET IO Connector in "Choose an Adapter" and all "profinetxadriver" in "choose a tag":
+
+![Data_Service_Variables](graphics/Data_Service_Data_Service_Variable.PNG)
+
+Click on "Aspects" and select variables if you want to display the variables e.g. in Performance Insight.
+
+![Data_Service_Aspects](graphics/Data_Service_Data_Service_Aspects.PNG)
+
