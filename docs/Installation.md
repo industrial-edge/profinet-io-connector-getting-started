@@ -39,9 +39,9 @@ The PROFINET IO Connector requires Layer 2 access within the IED to enable a com
 > [!NOTE]  
 > From version ied-os-1.3.0-57, Layer 2 can be configured after onboarding of IED. Previous versions support setting Layer 2  **only** during onboarding.
 
-## Configure IED Layer 2 access during onboarding of IED
+### Configure IED Layer 2 access during onboarding of IED
 
-## Configure IED Layer 2 access for onboarded IED
+### Configure IED Layer 2 access for onboarded IED
 
 Open the management system and select "My Edge Devices" on the left side in the bar.
 
