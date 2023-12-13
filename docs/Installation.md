@@ -43,8 +43,6 @@ Both options are described in the following subsections.
 
 ### Configure IED Layer 2 access during onboarding of IED
 
-### Configure IED Layer 2 access of onboarded IED
-
 Open the management system and select "My Edge Devices" on the left side in the bar.
 
 Click on "+ New Edge Device" on the upper right side.
@@ -60,6 +58,8 @@ Configure the network interface and the layer 2 access and click on "add".
 ![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
 
 Confirm the device configuration with "Next" and with "Create".
+
+### Configure IED Layer 2 access of onboarded IED
 
 ## Configure PROFINET IO Connector
 
