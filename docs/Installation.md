@@ -43,7 +43,7 @@ Both options are described in the following subsections.
 
 ### Configure IED Layer 2 access during onboarding of IED
 
-### Configure IED Layer 2 access for onboarded IED
+### Configure IED Layer 2 access of onboarded IED
 
 Open the management system and select "My Edge Devices" on the left side in the bar.
 
