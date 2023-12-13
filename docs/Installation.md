@@ -2,19 +2,11 @@
 
 - [PROFINET IO Connector Getting Started: Documentation](#profinet-io-connector-getting-started-documentation)
   - [Configure IED Layer 2 access](#configure-ied-layer-2-access)
+    - [Configure IED Layer 2 access during onboarding of IED](#configure-ied-layer-2-access-during-onboarding-of-IED)
+    - [Configure IED Layer 2 access of onboarded IED](#configure-ied-layer-2-access-of-onboarded-IED)
+  - [Configure Databus](#configure-databus)
+  - [Configure PROFINET IO Driver in TIA Portal](#configure-profinet-driver-in-tia-portal)
   - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
-    - [TIA Portal HSP for PN Driver](#tia-portal-hsp-for-pn-driver)
-    - [Configure PROFINET IO Connector in TIA Portal](#configure-profinet-io-connector-in-tia-portal)
-    - [Configure PROFINET IO Configuration Files](#configure-profinet-io-configuration-files)
-    - [Configure PROFINET IO with Binary format](#configure-profinet-io-with-binary-format)
-    - [Configure PROFINET IO with JSON format](#configure-profinet-io-with-json-format)
-    - [Configure User Credentials for IE Databus](#configure-user-credentials-for-ie-databus)
-    - [Configure Application Settings](#configure-application-settings)
-    - [Configure Tag Definition](#configure-tag-definition)
-    - [Update All Configurations Files from Management (IEM)](#update-all-configurations-files-from-management-iem)
-  - [Configure Databus and Data Service](#configure-databus-and-data-service)
-    - [Configure Databus](#configure-databus)
-    - [Configure Data Service](#configure-data-service)
 
 ## Configure IED Layer 2 access
 
@@ -61,7 +53,7 @@ Configure the layer 2 access and click on "Update".
 
 ![Layer_2_configuration_after_onboarding_3](graphics/Layer_2_configuration_after_onboarding_3.png)
 
-## Configuration of Databus
+## Configure Databus
 
 First of all, make sure that you have installed
 - Databus Configurator application in your IEM Maintenance
