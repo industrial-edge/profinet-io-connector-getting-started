@@ -90,17 +90,41 @@ In order to manage a communication between PLC and IED, the PROFINET Driver shou
 
 ![TIA_Portal_HSP_PN_IO_Driver](graphics/TIA_Portal_HSP_PN_IO_Driver.png)
 
-Click "Devices & Network" at the top of the left side.
+By double clicking open "Devices & Network" at the top of the left side.
 
-Select the PROFINET Driver from the catalog.
+![TIA_Portal_PN_IO_Driver_configuration_1](graphics/TIA_Portal_PN_IO_Driver_configuration_1.png)
+
+Select the PROFINET Driver from the catalog, drag it and drop it into the "Network view" field.
+
+![TIA_Portal_PN_IO_Driver_configuration_2](graphics/TIA_Portal_PN_IO_Driver_configuration_2.png)
+
+Next, you have to add Linux native communication interface to the PROFINET Driver. Drag in and drop into the PROFINET interface of the PROFINET Driver in "Device view" field.
+
+![TIA_Portal_PN_IO_Driver_configuration_3](graphics/TIA_Portal_PN_IO_Driver_configuration_3.png)
+
+The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet.
+
+![TIA_Portal_PN_IO_Driver_configuration_4](graphics/TIA_Portal_PN_IO_Driver_configuration_4.png)
+
+![TIA_Portal_PN_IO_Driver_configuration_5](graphics/TIA_Portal_PN_IO_Driver_configuration_5.png)
+
+![TIA_Portal_PN_IO_Driver_configuration_6](graphics/TIA_Portal_PN_IO_Driver_configuration_6.png)
+
+![TIA_Portal_PN_IO_Driver_configuration_7](graphics/TIA_Portal_PN_IO_Driver_configuration_7.png)
+
+
+
+
+
+
 
 ![TIA_PROFINET_Driver](graphics/TIA_PROFINET_Driver.PNG)
 
-Next, you have to add Linux native communication interface to the PROFINET Driver.
+
 
 ![TIA_PROFINET_Driver_Linux](graphics/TIA_PROFINET_Driver_Linux.PNG)
 
-The project contains now a PC station with prepared PROFINET Driver. Switch to the Network View and connect the PLC with the PROFINET Driver. Ensure that IP address of PROFINET Driver is inside IED subnet and outside of L2 subnet.
+
 
 Click on the PLC properties. Go to PROFINET interface [X1] and inside Operation mode, select IO device. Also, assign PROFINET driver to IO controller.
 
