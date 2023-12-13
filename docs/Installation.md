@@ -67,6 +67,12 @@ Confirm the device configuration with "Next" and with "Create".
 
 ### Configure IED Layer 2 access of onboarded IED
 
+![Layer_2_configuration_after_onboarding_1](graphics/Layer_2_configuration_after_onboarding_1.png)
+
+![Layer_2_configuration_after_onboarding_2](graphics/Layer_2_configuration_after_onboarding_2.png)
+
+![Layer_2_configuration_after_onboarding_3](graphics/Layer_2_configuration_after_onboarding_3.png)
+
 ## Configure PROFINET IO Connector
 
 To read data from the PLC and provide the data, we will use PROFINET IO Connector to establish connection a with the PLC via PROFINET.
