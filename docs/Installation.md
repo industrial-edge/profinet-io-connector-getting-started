@@ -73,7 +73,7 @@ First of all, make sure that you have installed
 
 ![Databus_apps_2](graphics/Databus_apps_2.png)
 
-In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED (or IEVD).
+Then, in your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED (or IEVD).
 
 ![Databus_configuration_1](graphics/Databus_configuration_1.png)
 
