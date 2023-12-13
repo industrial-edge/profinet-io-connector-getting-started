@@ -83,28 +83,13 @@ Then, in your IEM go to the Data Connections and open the Databus. Add a user wi
 
 ## Configure PROFINET Driver in TIA Portal
 
-## Configure PROFINET IO Connector
-
-There are two ways how to configure the PROFINET IO Connector
-1. [Directly in IED](Configuration_IED.md) - using Common Configurator application (newest and preferable way)
-2. [In IEM](Configuration_IEM.md) - PROFINET IO Configuration Files (older and more complicated way)
-
-
-The Profinet configuration is configured with the SIMATIC TIA Portal.
-
-### TIA Portal HSP for PN Driver
+In order to manage a communication between PLC and IED, the PROFINET Driver should be configured in TIA Portal.
 
 > [!NOTE]  
-> From version 1.3.0-57 of IED firmware (ied-os-1.3.0-57), Layer 2 can be configured after onboarding of IED. Previous versions support setting Layer 2  **only** during onboarding.
-
-
-
-The PNDriver V2.2 is not included automatically in TIA Portal V16. You have to install the HSP (Hardware Support Package).
-You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
+> If the TIA Portal V16 and older is used, the PNDriver V2.2 is not included automatically in there. Therefore, the HSP (Hardware Support Package) has to be installed. You can download the needed HSP 0307 from the Siemens support pages [↗ ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
 
 ![TIA_Portal_HSP_for_PN_Driver](graphics/TIA_Portal_HSP_for_PN_Driver.PNG)
 
-### Configure PROFINET IO Connector in TIA Portal
 
 Click "Devices & Network" at the top of the left side.
 
@@ -184,3 +169,9 @@ Select the PROFINET IO Connector in "Choose an Adapter" and all "profinetxadrive
 Click on "Aspects" and select variables if you want to display the variables e.g. in Performance Insight.
 
 ![Data_Service_Aspects](graphics/Data_Service_Data_Service_Aspects.PNG)
+
+## Configure PROFINET IO Connector
+
+There are two ways how to configure the PROFINET IO Connector
+1. [Directly in IED](Configuration_IED.md) - using Common Configurator application (newest and preferable way)
+2. [In IEM](Configuration_IEM.md) - PROFINET IO Configuration Files (older and more complicated way)
