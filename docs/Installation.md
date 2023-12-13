@@ -37,7 +37,9 @@ In your IEM go to the Data Connections and open the Databus. Add a user with fol
 The PROFINET IO Connector requires Layer 2 access within the IED to enable a communication with the PLC.
 
 > [!NOTE]  
-> From version ied-os-1.3.0-57, Layer 2 can be configured after onboarding of IED. Previous versions support setting Layer 2  **only** during onboarding.
+> From version 1.3.0-57 of IED firmware (ied-os-1.3.0-57), Layer 2 can be configured after onboarding of IED. Previous versions support setting Layer 2  **only** during onboarding.
+
+Both options are described in the following subsections.
 
 ### Configure IED Layer 2 access during onboarding of IED
 
