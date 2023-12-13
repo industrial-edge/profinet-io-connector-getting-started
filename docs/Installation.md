@@ -20,7 +20,7 @@
 
 The PROFINET IO Connector requires Layer 2 access within the IED to enable a communication with the PLC.
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > From version 1.3.0-57 of IED firmware (ied-os-1.3.0-57) the Layer 2 can be configured after onboarding of IED. Previous versions support setting Layer 2  **only** during onboarding. Both options are described in the following subsections.
 
 ### Configure IED Layer 2 access during onboarding of IED
@@ -83,7 +83,7 @@ Then, in your IEM go to the Data Connections and open the Databus. Add a user wi
 
 In order to manage a communication between PLC and IED, the PROFINET Driver should be configured in TIA Portal.
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > If the TIA Portal V16 or older is used, the PNDriver V2.2 is not included automatically in there. Therefore, the HSP (Hardware Support Package) has to be installed. You can download the needed HSP 0307 from the Siemens support pages [↗ID 72341852](https://support.industry.siemens.com/cs/ww/en/view/72341852).
 
 ![TIA_Portal_HSP_PN_IO_Driver](graphics/TIA_Portal_HSP_PN_IO_Driver.png)
