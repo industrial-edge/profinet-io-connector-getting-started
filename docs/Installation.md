@@ -43,21 +43,27 @@ Both options are described in the following subsections.
 
 ### Configure IED Layer 2 access during onboarding of IED
 
-Open the management system and select "My Edge Devices" on the left side in the bar.
+Open the management system and select "My Edge Devices" on the left side in the bar and click on "+ New Edge Device" on the upper right side.
 
-Click on "+ New Edge Device" on the upper right side.
+![Layer_2_configuration_onboarding_1](graphics/Layer_2_configuration_onboarding_1.png)
 
 Configure your Edge Device and click on "Next".
 
+![Layer_2_configuration_onboarding_2](graphics/Layer_2_configuration_onboarding_2.png)
+
 Click on the "+" button at the top right to configure the network interface.
 
-![Configure_Device_New](graphics/Configure_Device_New.PNG)
+![Layer_2_configuration_onboarding_3](graphics/Layer_2_configuration_onboarding_3.png)
 
 Configure the network interface and the layer 2 access and click on "add".
 
-![Confiture_Device_Layer_2_Access_example](graphics/Configure_Device_Layer_2_Access_example.PNG)
+![Layer_2_configuration_onboarding_4](graphics/Layer_2_configuration_onboarding_4.png)
 
 Confirm the device configuration with "Next" and with "Create".
+
+![Layer_2_configuration_onboarding_5](graphics/Layer_2_configuration_onboarding_5.png)
+
+![Layer_2_configuration_onboarding_6](graphics/Layer_2_configuration_onboarding_6.png)
 
 ### Configure IED Layer 2 access of onboarded IED
 
