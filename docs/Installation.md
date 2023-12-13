@@ -55,7 +55,7 @@ Click on the "+" button at the top right to configure the network interface.
 
 ![Layer_2_configuration_onboarding_3](graphics/Layer_2_configuration_onboarding_3.png)
 
-Configure the network interface and the layer 2 access and click on "add".
+Configure the network interface and the layer 2 access and click on "Add".
 
 ![Layer_2_configuration_onboarding_4](graphics/Layer_2_configuration_onboarding_4.png)
 
@@ -67,9 +67,15 @@ Confirm the device configuration with "Next" and with "Create".
 
 ### Configure IED Layer 2 access of onboarded IED
 
+In your IED go to the Settings, open the Connectivity tab and click on "LAN Network".
+
 ![Layer_2_configuration_after_onboarding_1](graphics/Layer_2_configuration_after_onboarding_1.png)
 
+Go to the edditing window of your IED network adapter by clicking on pencil icon.
+
 ![Layer_2_configuration_after_onboarding_2](graphics/Layer_2_configuration_after_onboarding_2.png)
+
+Configure the layer 2 access and click on "Update".
 
 ![Layer_2_configuration_after_onboarding_3](graphics/Layer_2_configuration_after_onboarding_3.png)
 
