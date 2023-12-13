@@ -118,9 +118,11 @@ Next, this tag needs to be populated. So, in PLC program, assign the respective 
 
 ![TIA_Portal_PN_IO_Driver_configuration_7](graphics/TIA_Portal_PN_IO_Driver_configuration_7.png)
 
-Finally, compile the PROFINET Driver to create the XML configuration file. This file you have to provide later during the configuration of the PROFINET IO Connector application.
+Finally, compile the PROFINET Driver to create the XML configuration file. This file you have to provide later during the configuration of the PROFINET IO Connector application. You can get to the file storage by clicking to green arrow.
 
-![TIA_PROFINET_Driver_XML](graphics/TIA_PROFINET_Driver_XML.PNG)
+![TIA_Portal_PN_IO_Driver_compilation](graphics/TIA_Portal_PN_IO_Driver_compilation.png)
+
+When all of the steps above are done, you can download the project to the PLC. Be aware that only physical PLC can be used. The PROFINET doesn't work on simulated PLC.
 
 ## Configure Databus and Data Service
 
