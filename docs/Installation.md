@@ -65,6 +65,14 @@ Configure the layer 2 access and click on "Update".
 
 ## Configuration of Databus
 
+First of all, make sure that you have installed
+- Databus Configurator application in your IEM Maintenance
+- Databus application in your IEM Management
+
+![Databus_apps_1](graphics/Databus_apps_1.png)
+
+![Databus_apps_2](graphics/Databus_apps_2.png)
+
 In your IEM go to the Data Connections and open the Databus. Add a user with following topic: `"ie/#"` and deploy it to IED (or IEVD).
 
 ![Databus_configuration_1](graphics/Databus_configuration_1.png)
