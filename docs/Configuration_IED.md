@@ -2,8 +2,12 @@
 
 - [PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector in IED](#profinet-io-connector-getting-started-configuration-of-profinet-io-connector-in-ied)
   - [Install necessary applications](#install-necessary-applications)
-  - [Configure PROFINET IO Connector in Common Configurator](#configure-profinet-io-connector-in-common-configurator)
-  - [Read data in IIH Essentials](#read-data-in-iih-essentials)
+  - [Configure Common Configurator](#configure-common-configurator)
+    - [Configure Databus Credentials](#configure-databus-credentials)
+    - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
+  - [Configure IIH Essentials](#configure-iih-essentials)
+    - [Configure Databus settings](#configure-databus-settings)
+    - [Configure Databus settings](#configure-data-reading)
 
 ## Install necessary applications
 
