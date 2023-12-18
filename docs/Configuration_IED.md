@@ -26,7 +26,11 @@ Apart from Databus Configurator it is also necessary to have Common Connector Co
 
 ### Configure Databus Credentials
 
+Go to the Settings and open Databus Credentials tab. Fill the Databus Service name, Databus Publisher settings (User name and Password) and then click on "Save".
+
 ![Common_Configurator_Databus_configuration_1](graphics/Common_Configurator_Databus_configuration_1.png)
+
+Then, click on "Databus Subscriber settings" and fill the User name and Password as well in there. Finally, click on "Save" again.
 
 ![Common_Configurator_Databus_configuration_1](graphics/Common_Configurator_Databus_configuration_2.png)
 
