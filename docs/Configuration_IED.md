@@ -26,7 +26,31 @@ Apart from Databus Configurator it is also necessary to have Common Connector Co
 
 ### Configure Databus Credentials
 
+![Common_Configurator_Databus_configuration_1](graphics/Common_Configurator_Databus_configuration_1.png)
+
+![Common_Configurator_Databus_configuration_1](graphics/Common_Configurator_Databus_configuration_2.png)
+
 ### Configure PROFINET IO Connector
+
+![Common_Configurator_configuration_1](graphics/Common_Configurator_configuration_1.png)
+
+![Common_Configurator_configuration_2](graphics/Common_Configurator_configuration_2.png)
+
+![Common_Configurator_configuration_3](graphics/Common_Configurator_configuration_3.png)
+
+![Common_Configurator_configuration_4](graphics/Common_Configurator_configuration_4.png)
+
+![Common_Configurator_configuration_5](graphics/Common_Configurator_configuration_5.png)
+
+![Common_Configurator_configuration_6](graphics/Common_Configurator_configuration_6.png)
+
+![Common_Configurator_configuration_7](graphics/Common_Configurator_configuration_7.png)
+
+![Common_Configurator_configuration_8](graphics/Common_Configurator_configuration_8.png)
+
+![Common_Configurator_configuration_9](graphics/Common_Configurator_configuration_9.png)
+
+![Common_Configurator_configuration_10](graphics/Common_Configurator_configuration_10.png)
 
 ## Configure IIH Essentials
 
