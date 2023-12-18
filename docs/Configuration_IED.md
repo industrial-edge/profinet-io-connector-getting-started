@@ -55,7 +55,7 @@ Then, click on "Add data source" and the window for the PROFINET datasource conf
 In this window select PROFINET IO Controller as a Communication protocol. Proceed by uploading a file exported from TIA Portal after compilation of PROFINET Driver. Then, set the Realtime task cycle in microseconds. This will be the sampling period of received data over PROFINET. Set the Oversampling factor as well. This number says how many samples will be sent in a package to MQTT. 
 
 > [!TIP]
-> Example for better understanding: Realtime task cycle 10000 microseconds means that the data will be sampled every 10 milliseconds from PLC. Oversampling factor 50 means that 50 samples will be collected during 500 milliseconds (half second) and then sent to MQTT Broker (Databus). In other words every half second 50 samples will be sent to MQTT Broker. 
+> Realtime task cycle 10000 microseconds means that the data will be sampled every 10 milliseconds from PLC. Oversampling factor 50 means that 50 samples will be collected during 500 milliseconds (half second) and then sent to MQTT Broker (Databus). In other words every half second 50 samples will be sent to MQTT Broker. 
 
 ![Common_Configurator_configuration_5](graphics/Common_Configurator_configuration_5.png)
 
