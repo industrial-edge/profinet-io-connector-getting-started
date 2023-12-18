@@ -60,9 +60,15 @@ Then, click on "Databus Subscriber settings" and fill the User name and Password
 
 ### Configure Databus settings
 
+Go to the Settings and click on "Databus settings".
+
 ![IIH_Essentials_Databus_configuration_1.png](graphics/IIH_Essentials_Databus_configuration_1.png)
 
+Proceed by clicking on pencil for editing the Databus settings.
+
 ![IIH_Essentials_Databus_configuration_2.png](graphics/IIH_Essentials_Databus_configuration_2.png)
+
+Fill the Broker Url, User name and Password. Finally, click on "Save".
 
 ![IIH_Essentials_Databus_configuration_3.png](graphics/IIH_Essentials_Databus_configuration_3.png)
 
