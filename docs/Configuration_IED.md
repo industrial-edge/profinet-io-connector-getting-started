@@ -56,4 +56,24 @@ Apart from Databus Configurator it is also necessary to have Common Connector Co
 
 ### Configure Databus settings
 
+![IIH_Essentials_Databus_configuration_1.png](graphics/IIH_Essentials_Databus_configuration_1.png)
+
+![IIH_Essentials_Databus_configuration_2.png](graphics/IIH_Essentials_Databus_configuration_2.png)
+
+![IIH_Essentials_Databus_configuration_3.png](graphics/IIH_Essentials_Databus_configuration_3.png)
+
 ### Configure Data reading
+
+![IIH_Essentials_configuration_1.png](graphics/IIH_Essentials_configuration_1.png)
+
+![IIH_Essentials_configuration_2.png](graphics/IIH_Essentials_configuration_2.png)
+
+![IIH_Essentials_configuration_3.png](graphics/IIH_Essentials_configuration_3.png)
+
+![IIH_Essentials_configuration_4.png](graphics/IIH_Essentials_configuration_4.png)
+
+![IIH_Essentials_configuration_5.png](graphics/IIH_Essentials_configuration_5.png)
+
+![IIH_Essentials_configuration_6.png](graphics/IIH_Essentials_configuration_6.png)
+
+![IIH_Essentials_configuration_7.png](graphics/IIH_Essentials_configuration_7.png)
