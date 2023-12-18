@@ -102,16 +102,30 @@ Fill the Broker Url, User name and Password. Finally, click on "Save".
 
 ### Configure Data reading
 
+In the your IED UI open the IIH Essentials application.
+
 ![IIH_Essentials_configuration_1.png](graphics/IIH_Essentials_configuration_1.png)
+
+Go to the Connectors tab and click on "PROFINET IO Connector" and open its configuration by clicking on the pencil in the top right corner.
 
 ![IIH_Essentials_configuration_2.png](graphics/IIH_Essentials_configuration_2.png)
 
+Change the status of the connector to Active and then click on "Save".
+
 ![IIH_Essentials_configuration_3.png](graphics/IIH_Essentials_configuration_3.png)
+
+Then, if the connection in Common Configuration was established successfully, you can see that its Status if connector is Active and the status of its connection is Connected.
 
 ![IIH_Essentials_configuration_4.png](graphics/IIH_Essentials_configuration_4.png)
 
+Proceed by going to the Assets & Connectivity tab and click on "Add multiple variables".
+
 ![IIH_Essentials_configuration_5.png](graphics/IIH_Essentials_configuration_5.png)
 
+In the next window select the Profinet IO Connector and check the check box for selecting all its variables. Finally, click on "Save".
+
 ![IIH_Essentials_configuration_6.png](graphics/IIH_Essentials_configuration_6.png)
+
+Then, select the check box "Last values" to see the changes of the configured tags. If everything was configured correctly, you can see how define tags are changing their values.
 
 ![IIH_Essentials_configuration_7.png](graphics/IIH_Essentials_configuration_7.png)
