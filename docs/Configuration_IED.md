@@ -55,17 +55,32 @@ Then, click on "Add data source" and the window for the PROFINET datasource conf
 In this window select PROFINET IO Controller as a Communication protocol. Proceed by uploading a file exported from TIA Portal after compilation of PROFINET Driver. Then, set the Realtime task cycle in microseconds. This will be the sampling period of received data over PROFINET. Set the Oversampling factor for MQTT as well. This number says how many samples will be sent in a package to Databus.
 
 > [!TIP]
-> Realtime task cycle 10000 microseconds means that the data will be sampled every 10 milliseconds from PLC. Oversampling factor 50 means that 50 samples will be collected during 500 milliseconds (half second) and then sent to MQTT Broker (Databus). In other words every half second 50 samples will be sent to MQTT Broker. 
+> Realtime task cycle 10000 microseconds means that the data will be sampled every 10 milliseconds from PLC. Oversampling factor 50 means that 50 samples will be collected during 500 milliseconds (half second) and then sent to MQTT Broker (Databus). In other words every half second 50 samples will be sent to MQTT Broker.
 
 ![Common_Configurator_configuration_5](graphics/Common_Configurator_configuration_5.png)
 
+The MQTT topics are the content of the rest of this window. You can keep their default addresses. Finally, click on "Save". Then, the PROFINET data source is configured.
+
 ![Common_Configurator_configuration_6](graphics/Common_Configurator_configuration_6.png)
+
+Proceed by clicking on menu under Actions and then on "Add tag".
 
 ![Common_Configurator_configuration_7](graphics/Common_Configurator_configuration_7.png)
 
+Then, the window for tag configuration will be opened. Here the following information about one tag should be filled:
+- Name (up to you)
+- Data type (should correspond with tag's data type in TIA Portal)
+- Address (output from PLC `"%QD6"` is the input to IED `"%ID6"`)
+
+When information mentioned above are filled, you can click on "Save".
+
 ![Common_Configurator_configuration_8](graphics/Common_Configurator_configuration_8.png)
 
+Proceed by configuring all other tags same way as it is described above. Then, select the data source with configured tags and click on "Deploy".
+
 ![Common_Configurator_configuration_9](graphics/Common_Configurator_configuration_9.png)
+
+Click to "Overview" tab. Then, if the connection was established successfully, you can see the corresponding log messages.
 
 ![Common_Configurator_configuration_10](graphics/Common_Configurator_configuration_10.png)
 
