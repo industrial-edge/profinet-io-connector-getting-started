@@ -36,7 +36,11 @@ Then, click on "Databus Subscriber settings" and fill the User name and Password
 
 ### Configure PROFINET IO Connector
 
+In the your IED UI open the Common Configurator application.
+
 ![Common_Configurator_configuration_1](graphics/Common_Configurator_configuration_1.png)
+
+Go to Get Data and click on "Connector Configuration". Then, open the PROFINET IO Connector configuration interface.
 
 ![Common_Configurator_configuration_2](graphics/Common_Configurator_configuration_2.png)
 
