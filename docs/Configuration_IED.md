@@ -18,7 +18,14 @@ Apart from Databus Configurator it is also necessary to have Common Connector Co
 
 ![Installed_apps_IEM_Maintenance](graphics/Installed_apps_IEM_Maintenance.png)
 
-## Configure PROFINET IO Connector in Common Configurator
+## Configure Common Configurator
 
+### Configure Databus Credentials
 
-## Read data in IIH Essentials
+### Configure PROFINET IO Connector
+
+## Configure IIH Essentials
+
+### Configure Databus settings
+
+### Configure Data reading
