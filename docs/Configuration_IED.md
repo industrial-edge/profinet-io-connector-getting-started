@@ -57,7 +57,7 @@ In this window select PROFINET IO Controller as a Communication protocol. Procee
 > [!TIP]
 > Realtime task cycle 10000 microseconds means that the data will be sampled every 10 milliseconds from PLC. Oversampling factor 50 means that 50 samples will be collected during 500 milliseconds (half second) and then sent to MQTT Broker (Databus). In other words every half second 50 samples will be sent to MQTT Broker.
 
-For getting MQTT message in JSON format leave the corresponding check box unchecked. If you wish to receive the message in binary format, check this check box.
+For getting MQTT message in JSON format leave the corresponding check box unchecked. If you wish to receive the message in binary format, check this check box. The binary format of message is used when higher performance of data reading and publishing is required.
 
 ![Common_Configurator_configuration_5](graphics/Common_Configurator_configuration_5.png)
 
