@@ -7,11 +7,17 @@
 ## Prepare configuration files
 
 In order to configure PROFINET IO Conenctor from IEM, the following four configuration files should be prepared and then uploaded to application Update Configuration window:
-- User credentials for Databus (pn_hs_adpt_credentials.xml)
-- Application settings (pn_hs_adpt_appconfig.xml)
-- Profinet configuration (e.g. generated from TIA Portal)
+- 01_App_Config - Application settings (pn_hs_adpt_appconfig.xml)
+- 02_User_Credentials - user credentials for Databus (pn_hs_adpt_credentials.xml)
+- 03_PROFINET_Config - configuration of PROFINET Driver - this file is generated in TIA Portal after PROFINET Driver compilation
+- 04_Tag_Definitions - tag definitions file (pn_hs_adpt_tagdefs.json) - thi file is optional
 
-- optional Tag Definition File (pn_hs_adpt_tagdefs.json) - this file
+
+
+
+
+
+
 
 
 You have a choice in the PROFINET IO Connector between binary and JSON format. You must use the downloaded example configuration files for the respective format.
