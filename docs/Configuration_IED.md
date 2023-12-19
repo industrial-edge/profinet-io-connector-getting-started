@@ -7,7 +7,7 @@
     - [Configure PROFINET IO Connector](#configure-profinet-io-connector)
   - [Configure IIH Essentials](#configure-iih-essentials)
     - [Configure Databus settings](#configure-databus-settings)
-    - [Configure Databus settings](#configure-data-reading)
+    - [Configure Data reading](#configure-data-reading)
 
 ## Install necessary applications
 
