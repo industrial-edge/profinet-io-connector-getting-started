@@ -71,6 +71,10 @@ Then, in your IEM go to the Data Connections and open the Databus. Add a user wi
 
 ![Databus_configuration_4](graphics/Databus_configuration_4.png)
 
+![Databus_configuration_5](graphics/Databus_configuration_5.png)
+
+![Databus_configuration_6](graphics/Databus_configuration_6.png)
+
 ## Configure PROFINET Driver in TIA Portal
 
 In order to manage a communication between PLC and IED, the PROFINET Driver should be configured in TIA Portal.
