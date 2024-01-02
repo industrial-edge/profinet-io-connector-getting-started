@@ -120,6 +120,8 @@ When all of the steps above are done, you can download the project to the PLC. B
 
 ## Configure PROFINET IO Connector in Common Configurator
 
-
+- Install necessary applications
+- Configure Common Configurator
+- Configure IIH Essentials
 
 You can find the further information about the following steps in the [PROFINET_IO_Connector_configuration](PROFINET_IO_Connector_configuration.md).
