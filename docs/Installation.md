@@ -120,7 +120,4 @@ When all of the steps above are done, you can download the project to the PLC. B
 
 ## Configure PROFINET IO Connector
 
-There are two ways how to configure the PROFINET IO Connector:
-
-1. [Directly in IED](Configuration_IED.md) - using Common Configurator application (newest and preferable way)
-2. [In IEM](Configuration_IEM.md) - using PROFINET IO Configuration Files (older and more complicated way)
+The way how to configure the PROFINET IO Connector using Common Configurator application is described in the following document: [Configuration](Configuration_IED.md).
