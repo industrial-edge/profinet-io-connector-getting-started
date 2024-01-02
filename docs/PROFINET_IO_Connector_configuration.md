@@ -1,6 +1,6 @@
-# PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector
+# PROFINET IO Connector Getting Started: PROFINET IO Connector configuration
 
-- [PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector](#profinet-io-connector-getting-started-configuration-of-profinet-io-connector)
+- [PROFINET IO Connector Getting Started: PROFINET IO Connector configuration](#profinet-io-connector-getting-started-profinet-io-connector-configuration)
   - [Install necessary applications](#install-necessary-applications)
   - [Configure Common Configurator](#configure-common-configurator)
     - [Configure Databus Credentials](#configure-databus-credentials)
