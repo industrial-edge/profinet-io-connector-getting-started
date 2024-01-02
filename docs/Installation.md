@@ -118,6 +118,8 @@ Finally, compile the PROFINET Driver to create the XML configuration file. This 
 
 When all of the steps above are done, you can download the project to the PLC. Be aware that only physical PLC can be used. The PROFINET doesn't work on simulated PLC.
 
-## Configure PROFINET IO Connector
+## Configure PROFINET IO Connector in Common Configurator
 
-The way how to configure the PROFINET IO Connector using Common Configurator application is described in [PN_IO_Connector_configuration](PROFINET_IO_Connector_configuration.md).
+
+
+You can find the further information about the following steps in the [PROFINET_IO_Connector_configuration](PROFINET_IO_Connector_configuration.md).
