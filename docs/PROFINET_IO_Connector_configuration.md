@@ -88,6 +88,10 @@ Click to "Overview" tab. Then, if the connection was established successfully, y
 
 ## Configure IIH Essentials
 
+In the your IED UI open the IIH Essentials application.
+
+![IIH_Essentials_configuration_1.png](graphics/IIH_Essentials_configuration_1.png)
+
 ### Configure Databus settings
 
 Go to the Settings and click on "Databus settings".
@@ -103,10 +107,6 @@ Fill the Broker Url, User name and Password. Finally, click on "Save".
 ![IIH_Essentials_Databus_configuration_3.png](graphics/IIH_Essentials_Databus_configuration_3.png)
 
 ### Configure Data reading
-
-In the your IED UI open the IIH Essentials application.
-
-![IIH_Essentials_configuration_1.png](graphics/IIH_Essentials_configuration_1.png)
 
 Go to the Connectors tab and click on "PROFINET IO Connector" and open its configuration by clicking on the pencil in the top right corner.
 
