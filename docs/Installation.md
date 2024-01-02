@@ -120,4 +120,4 @@ When all of the steps above are done, you can download the project to the PLC. B
 
 ## Configure PROFINET IO Connector
 
-The way how to configure the PROFINET IO Connector using Common Configurator application is described in [PROFINET_IO_Connector_configuration](PROFINET_IO_Connector_configuration.md).
+The way how to configure the PROFINET IO Connector using Common Configurator application is described in [PN_IO_Connector_configuration](PROFINET_IO_Connector_configuration.md).
