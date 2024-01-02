@@ -1,6 +1,6 @@
-# PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector in IED
+# PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector
 
-- [PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector in IED](#profinet-io-connector-getting-started-configuration-of-profinet-io-connector-in-ied)
+- [PROFINET IO Connector Getting Started: Configuration of PROFINET IO Connector](#profinet-io-connector-getting-started-configuration-of-profinet-io-connector)
   - [Install necessary applications](#install-necessary-applications)
   - [Configure Common Configurator](#configure-common-configurator)
     - [Configure Databus Credentials](#configure-databus-credentials)
