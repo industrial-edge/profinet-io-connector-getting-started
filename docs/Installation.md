@@ -1,6 +1,6 @@
 # PROFINET IO Connector Getting Started: Installation
 
-- [PROFINET IO Connector Getting Started: Documentation](#profinet-io-connector-getting-started-documentation)
+- [PROFINET IO Connector Getting Started: Installation](#profinet-io-connector-getting-started-installation)
   - [Configure IED Layer 2 access](#configure-ied-layer-2-access)
     - [Configure IED Layer 2 access during onboarding of IED](#configure-ied-layer-2-access-during-onboarding-of-IED)
     - [Configure IED Layer 2 access of onboarded IED](#configure-ied-layer-2-access-of-onboarded-IED)
