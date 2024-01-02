@@ -63,9 +63,9 @@ The used TIA Portal project can be found in the [miscellenous repository](https:
 
 ## Configuration steps
 
-- Configure PROFINET Driver in TIA Portal
 - Configure IED Layer 2 access
 - Configure Databus
+- Configure PROFINET Driver in TIA Portal
 - Configure PROFINET IO Connector in Common Configurator
 
 You can find the further information about the following steps in the [Installation](docs/Installation.md).
